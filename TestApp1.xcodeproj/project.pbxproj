@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B27352892C18001A0027046A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27352882C18001A0027046A /* ContentView.swift */; };
 		B2AFC1722C17AC5300E7257C /* TestApp1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC1712C17AC5300E7257C /* TestApp1App.swift */; };
-		B2AFC1742C17AC5300E7257C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC1732C17AC5300E7257C /* ContentView.swift */; };
+		B2AFC1742C17AC5300E7257C /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC1732C17AC5300E7257C /* ItemsView.swift */; };
 		B2AFC1762C17AC5300E7257C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC1752C17AC5300E7257C /* Item.swift */; };
 		B2AFC1782C17AC5500E7257C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AFC1772C17AC5500E7257C /* Assets.xcassets */; };
 		B2AFC17C2C17AC5500E7257C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AFC17B2C17AC5500E7257C /* Preview Assets.xcassets */; };
 		B2AFC1862C17AC5500E7257C /* TestApp1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC1852C17AC5500E7257C /* TestApp1Tests.swift */; };
 		B2AFC1902C17AC5500E7257C /* TestApp1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC18F2C17AC5500E7257C /* TestApp1UITests.swift */; };
 		B2AFC1922C17AC5500E7257C /* TestApp1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC1912C17AC5500E7257C /* TestApp1UITestsLaunchTests.swift */; };
+		B2AFC19F2C17ACB600E7257C /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC19E2C17ACB600E7257C /* SidebarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B27352882C18001A0027046A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2AFC16E2C17AC5300E7257C /* TestApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AFC1712C17AC5300E7257C /* TestApp1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp1App.swift; sourceTree = "<group>"; };
-		B2AFC1732C17AC5300E7257C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B2AFC1732C17AC5300E7257C /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 		B2AFC1752C17AC5300E7257C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B2AFC1772C17AC5500E7257C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2AFC1792C17AC5500E7257C /* TestApp1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestApp1.entitlements; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		B2AFC18B2C17AC5500E7257C /* TestApp1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestApp1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AFC18F2C17AC5500E7257C /* TestApp1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp1UITests.swift; sourceTree = "<group>"; };
 		B2AFC1912C17AC5500E7257C /* TestApp1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2AFC19E2C17ACB600E7257C /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				B2AFC1712C17AC5300E7257C /* TestApp1App.swift */,
-				B2AFC1732C17AC5300E7257C /* ContentView.swift */,
+				B27352882C18001A0027046A /* ContentView.swift */,
+				B2AFC19E2C17ACB600E7257C /* SidebarView.swift */,
+				B2AFC1732C17AC5300E7257C /* ItemsView.swift */,
 				B2AFC1752C17AC5300E7257C /* Item.swift */,
 				B2AFC1772C17AC5500E7257C /* Assets.xcassets */,
 				B2AFC1792C17AC5500E7257C /* TestApp1.entitlements */,
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2AFC1742C17AC5300E7257C /* ContentView.swift in Sources */,
+				B2AFC1742C17AC5300E7257C /* ItemsView.swift in Sources */,
+				B27352892C18001A0027046A /* ContentView.swift in Sources */,
+				B2AFC19F2C17ACB600E7257C /* SidebarView.swift in Sources */,
 				B2AFC1762C17AC5300E7257C /* Item.swift in Sources */,
 				B2AFC1722C17AC5300E7257C /* TestApp1App.swift in Sources */,
 			);
@@ -441,7 +449,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = design.subcreation.TestApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,7 +488,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = design.subcreation.TestApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
