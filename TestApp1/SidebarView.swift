@@ -12,7 +12,7 @@ struct SidebarView: View {
         #if os(macOS)
         NavigationView {
             List {
-                NavigationLink(destination: ItemsView()) {
+                NavigationLink(destination: TodosView()) {
                     Label("Items", systemImage: "checklist")
                 }
                 NavigationLink(destination: Text("Social")) {
@@ -23,7 +23,7 @@ struct SidebarView: View {
                 }
             }
             
-            ItemsView()
+            TodosView()
         }
         .listStyle(.sidebar)
         .toolbar {

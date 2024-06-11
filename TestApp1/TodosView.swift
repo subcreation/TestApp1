@@ -8,21 +8,21 @@
 import SwiftUI
 import SwiftData
 
-struct ItemsView: View {
+struct TodosView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Query private var todos: [Todo]
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
+                ForEach(todos) { todo in
                     NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        Text("Item at \(todo.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))")
                     } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        Text(todo.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))
                     }
                 }
-                .onDelete(perform: deleteItems)
+                .onDelete(perform: deleteTodos)
             }
 #if os(macOS)
             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
@@ -34,7 +34,7 @@ struct ItemsView: View {
                 }
 #endif
                 ToolbarItem {
-                    Button(action: addItem) {
+                    Button(action: addTodo) {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
@@ -44,23 +44,23 @@ struct ItemsView: View {
         }
     }
 
-    private func addItem() {
+    private func addTodo() {
         withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+            let newTodo = Todo(name: "new")
+            modelContext.insert(newTodo)
         }
     }
 
-    private func deleteItems(offsets: IndexSet) {
+    private func deleteTodos(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(items[index])
+                modelContext.delete(todos[index])
             }
         }
     }
 }
 
 #Preview {
-    ItemsView()
-        .modelContainer(for: Item.self, inMemory: true)
+    TodosView()
+        .modelContainer(for: Todo.self, inMemory: true)
 }
