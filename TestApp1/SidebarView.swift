@@ -13,7 +13,7 @@ struct SidebarView: View {
         NavigationView {
             List {
                 NavigationLink(destination: TodosView()) {
-                    Label("Items", systemImage: "checklist")
+                    Label("Todos", systemImage: "checklist")
                 }
                 NavigationLink(destination: Text("Social")) {
                     Label("Social", systemImage: "person.3")

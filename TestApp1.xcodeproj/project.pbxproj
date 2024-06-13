@@ -10,6 +10,7 @@
 		B27352892C18001A0027046A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27352882C18001A0027046A /* ContentView.swift */; };
 		B273528C2C1827F60027046A /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B273528B2C1827F60027046A /* Tag.swift */; };
 		B273528E2C18281F0027046A /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B273528D2C18281F0027046A /* RGBColor.swift */; };
+		B27352902C182E250027046A /* TodoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B273528F2C182E250027046A /* TodoDetailView.swift */; };
 		B2AFC1722C17AC5300E7257C /* TestApp1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC1712C17AC5300E7257C /* TestApp1App.swift */; };
 		B2AFC1742C17AC5300E7257C /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC1732C17AC5300E7257C /* TodosView.swift */; };
 		B2AFC1762C17AC5300E7257C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AFC1752C17AC5300E7257C /* Todo.swift */; };
@@ -42,6 +43,7 @@
 		B27352882C18001A0027046A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B273528B2C1827F60027046A /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		B273528D2C18281F0027046A /* RGBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
+		B273528F2C182E250027046A /* TodoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailView.swift; sourceTree = "<group>"; };
 		B2AFC16E2C17AC5300E7257C /* TestApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AFC1712C17AC5300E7257C /* TestApp1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp1App.swift; sourceTree = "<group>"; };
 		B2AFC1732C17AC5300E7257C /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				B27352882C18001A0027046A /* ContentView.swift */,
 				B2AFC19E2C17ACB600E7257C /* SidebarView.swift */,
 				B2AFC1732C17AC5300E7257C /* TodosView.swift */,
+				B273528F2C182E250027046A /* TodoDetailView.swift */,
 				B273528A2C1827D10027046A /* Model */,
 				B2AFC1772C17AC5500E7257C /* Assets.xcassets */,
 				B2AFC1792C17AC5500E7257C /* TestApp1.entitlements */,
@@ -285,6 +288,7 @@
 				B273528C2C1827F60027046A /* Tag.swift in Sources */,
 				B2AFC1742C17AC5300E7257C /* TodosView.swift in Sources */,
 				B27352892C18001A0027046A /* ContentView.swift in Sources */,
+				B27352902C182E250027046A /* TodoDetailView.swift in Sources */,
 				B273528E2C18281F0027046A /* RGBColor.swift in Sources */,
 				B2AFC19F2C17ACB600E7257C /* SidebarView.swift in Sources */,
 				B2AFC1762C17AC5300E7257C /* Todo.swift in Sources */,

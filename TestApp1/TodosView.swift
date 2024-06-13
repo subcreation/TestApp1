@@ -11,21 +11,28 @@ import SwiftData
 struct TodosView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var todos: [Todo]
+    @State var searchText = ""
 
     var body: some View {
         NavigationView {
             List {
                 ForEach(todos) { todo in
                     NavigationLink {
-                        Text("Item at \(todo.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        TodoDetailView(todo: todo)
                     } label: {
-                        Text(todo.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        HStack {
+                            Image(systemName: todo.isDone ? "checkmark.circle.fill" : "circle")
+                                .foregroundStyle(todo.isDone ? .green : .gray)
+                            Text(todo.name)
+                        }
                     }
                 }
                 .onDelete(perform: deleteTodos)
             }
+            .searchable(text: $searchText, placement: .automatic, prompt: "search")
 #if os(macOS)
             .navigationSplitViewColumnWidth(min: 180, ideal: 200)
+            .listStyle(.inset)
 #endif
             .toolbar {
 #if os(iOS)
