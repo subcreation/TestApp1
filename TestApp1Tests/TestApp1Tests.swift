@@ -19,7 +19,7 @@ class TestApp1Tests: XCTestCase {
     }
 
     func testTodoToggleIsDone() {
-        var todo = Todo(name: "Test Todo")
+        let todo = Todo(name: "Test Todo")
         todo.isDone.toggle()
         XCTAssertTrue(todo.isDone)
     }
