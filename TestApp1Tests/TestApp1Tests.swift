@@ -5,12 +5,22 @@
 //  Created by Nathanael Roberton on 6/10/24.
 //
 
-import Testing
+import XCTest
+import SwiftUI
+@testable import TestApp1
 
-struct TestApp1Tests {
+class TestApp1Tests: XCTestCase {
 
-    @Test func testExample() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    func testTodoInitialization() {
+        let todo = Todo(name: "Test Todo", isDone: false, priority: 1)
+        XCTAssertEqual(todo.name, "Test Todo")
+        XCTAssertEqual(todo.isDone, false)
+        XCTAssertEqual(todo.priority, 1)
     }
 
+    func testTodoToggleIsDone() {
+        var todo = Todo(name: "Test Todo")
+        todo.isDone.toggle()
+        XCTAssertTrue(todo.isDone)
+    }
 }
